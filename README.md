@@ -1,8 +1,10 @@
 JavaScript Validation on All HTML5 Form   Elements
+
 ==================================================
 
 
 1. ABOUT THIS APPLICATION
+
 ******************************************
 
 The Aim of this Application is "JavaScript Validation on All HTML5 Form Elements"
@@ -49,6 +51,7 @@ Phone * 	<Text Box> [Format: + 91 (990)-824-7888]
 
 
 2. WHAT THIS APPLICATION CONTAINS
+
 ******************************************
 
 Below is a list of files released as part of this build.
