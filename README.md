@@ -69,4 +69,4 @@ Below is a list of files released as part of this build.
 
 
 
-<img style="max-width:100%;" src="https://github.com/bheema-nyros/JavaScript-Validation-on-All-HTML5-Form-Elements/raw/master/Screenshot.bmp" alt="formvalidate" title="formvalidate">
+<img style="max-width:100%;" src="https://github.com/bheema-nyros/JavaScript-Validation-on-HTML5-Form-Elements/raw/master/Screenshot.bmp" alt="formvalidate" title="formvalidate">
