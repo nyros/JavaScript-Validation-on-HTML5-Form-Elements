@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    	<meta charset="utf-8">
+
+    	<title>JavaScript Validation on All HTML5 Form Elements</title>
+    
+	  	<meta name="viewport" content="width=device-width">
+
+    	<link href="style.css" rel="stylesheet">
+	
+		<script type="text/javascript" src="validation.js"></script>
+
+  </head>
+  <body>
+		<div class="container">
+		    <div class="page-header">
+			    <h1>Application form</h1>
+				
+				<div class="progress progress-striped active">
+  					<div class="bar" id="bar" style="width: 0%;"></div>
+				</div>
+				
+				<div id="alert" class="alert alert-success" style="visibility:hidden;">
+					<button id="close" class="close" data-dismiss="alert" type="button">×</button>
+					<strong>Congrats</strong>&nbsp; your application is submitted
+				</div>
+			    
+		    </div>
+				
+				<div class="row">
+				<div class="span8">
+					<form action="" id="contact-form" class="form-horizontal" name="myForm"  onsubmit="return validateForm()" method="post">
+					  <fieldset>
+					    <legend>Account Information</legend>
+					    
+						<div class="control-group">		<!--username input field-->
+					      <label class="control-label" for="name">User Name*</label>
+					      <div class="controls">
+					        <input type="text" class="input-xlarge" name="name" id="name" maxlength="8">
+					      </div>
+					    </div>
+						
+						<div class="control-group">		<!--password input field-->
+					      <label class="control-label" for="password">Password*</label>
+					      <div class="controls">
+					        <input type="password" class="input-xlarge" name="password" id="password" maxlength="6">
+					      </div>
+					    </div>
+						
+						<legend>Profile Information</legend>
+						
+						<div class="control-group">		<!--Firstname input field-->
+					      <label class="control-label" for="fname">First Name*</label>
+					      <div class="controls">
+					        <input type="text" class="input-xlarge" name="fname" id="fname" maxlength="6">
+					      </div>
+					    </div>
+						
+						<div class="control-group">		<!--Lastname input field-->
+					      <label class="control-label" for="lname">Last Name*</label>
+					      <div class="controls">
+					        <input type="text" class="input-xlarge" name="lname" id="lname" maxlength="15">
+					      </div>
+					    </div>
+						
+						
+					    <div class="control-group">		<!--File upload field-->  
+            			<label class="control-label" for="fileInput">File input</label>  
+            			<div class="controls">  
+              				<input class="input-file" id="fileInput" type="file">  
+           				 </div>  
+         				 </div>  
+						
+						<div class="control-group">		<!--Gender input field-->
+					      <label class="control-label" for="gender">Gender*</label>
+					      <div class="controls">
+					       <label class="radio">
+							<input type="radio" name="optionsRadios" id="optionsRadios1" value="male" checked>Male</label>
+							<label class="radio">
+							<input type="radio" name="optionsRadios" id="optionsRadios2" value="female">Female</label>
+					      </div>
+					    </div>
+						
+						<div class="control-group">		<!--Date of Birth input field-->
+					      <label class="control-label" for="birthdateDay">Date of Birth*</label>
+						  <div class="controls">
+				
+							<select id="Day" name="Day" class="required span1">
+								<option value="0">Day</option>
+								<option value="1">1</option>
+								<option value="2"> 2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>
+							</select>
+				
+				
+							<select id="Month" name="Month" class="required span1">
+								<option value="0">Month</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+						</select>
+		
+						<select id="Year" name="Year" class="required span1">
+							<option value="0">Year</option>
+							<option>1989</option>
+							<option>1990</option>
+							<option>1991</option>
+							<option>1992</option>
+							<option>1993</option>
+							<option>1994</option>
+							<option>1995</option>
+							<option>...</option>
+						</select>
+					   </div>
+					 </div>
+						
+						<div class="control-group">		<!--Hobbies input field-->
+					      <label class="control-label" for="hobbies">Hobbies*</label>
+					      <div class="controls">
+							<label class="checkbox inline">
+							<input id="h1" class="h1"  type="checkbox" >Painting</label>
+							<label class="checkbox inline">
+							<input id="h2" class="h2" type="checkbox" >Singing</label>
+							<label class="checkbox inline">
+							<input id="h3" class="h3" type="checkbox" >Traveling</label>
+							<label class="checkbox inline">
+							<input id="h4" class="h4" type="checkbox" >Dancing</label>
+							<label class="checkbox inline">
+							<input id="h5" class="h5" type="checkbox" >Gardening</label>
+							<label class="checkbox inline">
+							<input id="h6" class="h6" type="checkbox" >Others</label>
+						  </div>
+					    </div>
+						
+						
+					    <div class="control-group">		<!--Country select field-->
+					      <label class="control-label" for="contry">Have been to*</label>
+					      <div class="controls">
+					        
+							<select class="span2">
+								<option>India</option>
+								<option>Srilanka</option>
+								<option>USA</option>
+								<option>UK</option>
+								<option>Canada</option>
+							</select>
+					      </div>
+					     </div>
+						
+						
+              		<legend>Contact Information</legend>
+					    <div class="control-group">		<!--Phone input field-->
+					      <label class="control-label" for="phone">Phone *</label>
+					      <div class="controls">
+					        <input type="number" class="input-xlarge" name="phone" id="phone">
+					      </div>
+						  <span style="margin-left:220px"> [Format: + 91 (990)-824-7888] </span>
+					    </div>
+			  
+
+			  		<div class="form-actions">		<!--Form aciton buttons-->
+			  	
+		            	<button type="submit" class="btn btn-primary btn-large">Submit</button>
+    			      	<button class="btn">Cancel</button>
+        			</div>
+					  </fieldset>
+				
+				   </form><!--End of form-->
+				
+				</div><!-- .span -->
+
+			</div><!-- .row -->
+      	<hr>
+      <footer>
+       Nyros.com
+      </footer>
+    </div> <!-- .container -->
+  </body>
+</html>

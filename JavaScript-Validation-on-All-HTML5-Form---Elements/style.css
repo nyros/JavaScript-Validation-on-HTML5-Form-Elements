@@ -1,0 +1,52 @@
+
+
+@import url('assets/css/bootstrap.min.css');
+@import url('assets/css/bootstrap-responsive.min.css');
+
+
+
+		label.valid {
+		  width: 24px;
+		  height: 24px;
+		  background: url(assets/img/valid.png) center center no-repeat;
+		  display: inline-block;
+		  text-indent: -9999px;
+		}
+		label.error {
+			font-weight: bold;
+			color: red;
+			padding: 2px 8px;
+			margin-top: 2px;
+		}
+
+/*for username-field icon*/		
+input#name{
+	background: url(img/user.png) no-repeat;
+	padding-left:20px;
+
+}
+
+
+/*for password icon*/
+input#password{
+	background: url(img/key.png) no-repeat;
+	padding-left:20px;
+
+}
+
+
+/*for phone-field icon*/
+input#phone{
+	background: url(img/telephone.png) no-repeat;
+	padding-left:20px;
+
+}
+
+.container{
+	width:960px;!important
+	}
+	
+	
+
+
+
