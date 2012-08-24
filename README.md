@@ -9,9 +9,6 @@ JavaScript Validation on All HTML5 Form   Elements
 
 The Aim of this Application is "JavaScript Validation on All HTML5 Form Elements"
 
-  	In this source code i create a form that validates the fields using javaScript, Upon successful validation, a Congratulations message should be showed on top of form and a progress bar should also be shown on top basing on the number of HTML form elements successfully filled:
-
-
 Here is the example fields i choose:
 
 Application Form:
